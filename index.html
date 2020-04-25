@@ -18,7 +18,7 @@
         <script src="/socket.io/socket.io.js"></script>
         <script>
             $(function(){
-                const socket = io()
+                const socket = io({'transports': ['websocket']})
                 socket.nickname = ''
 
                 $('form').submit(function(){
